@@ -1,18 +1,17 @@
 {
   "name": "fs-modal",
-  "version": "1.0.3",
+  "version": "0.1.0",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Josh Crowther <jshcrowthe@gmail.com>"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "A <fs-modal> element that models the FamilySearch styleguide",
   "keywords": [
     "web-component",
     "polymer",
     "seed"
   ],
   "main": "fs-modal.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/fs-modal/",
+  "homepage": "https://github.com/jshcrowthe/fs-modal/",
   "ignore": [
     "/.*",
     "/test/"
