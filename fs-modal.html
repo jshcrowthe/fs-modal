@@ -17,7 +17,11 @@ An element providing a solution to no problem in particular.
 
 Example:
 
-    <fs-modal></fs-modal>
+    <fs-modal id='modal1' title='Modal'>
+      <h2>This is my cool modal!</h2>
+      <button is='fs-button' option='recommended' dialog-confirm>Done</button>
+      <button is='fs-button' option='minor' dialog-dismiss>Cancel</button>
+    </fs-modal>
 
 @group Seed Elements
 @element fs-modal
@@ -41,6 +45,10 @@ Example:
   Polymer({
     is: 'fs-modal',
     properties: {
+      /**
+       * An optional title to be displayed at the top of the modal
+       * @type {String}
+       */
       title: {
         type: String,
         value: null
@@ -68,8 +76,17 @@ Example:
         }
       }
     },
+    /**
+     * An interface method to open the modal
+     */
     open: function() {
       this.$.modal.open();
+    },
+    /**
+     * An interface method to close the modal
+     */
+    close: function() {
+      this.$.modal.close();
     }
   });
 })();
