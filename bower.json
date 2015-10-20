@@ -1,0 +1,30 @@
+{
+  "name": "fs-modal",
+  "version": "1.0.3",
+  "authors": [
+    "Anonymous <anonymous@example.com>"
+  ],
+  "description": "An element providing a solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "fs-modal.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/<USERNAME>/fs-modal/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0",
+    "paper-dialog": "PolymerElements/paper-dialog#~1.0.2",
+    "fs-styles": "jshcrowthe/fs-styles#tagStyles"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*",
+    "fs-button": "jshcrowthe/fs-button"
+  }
+}

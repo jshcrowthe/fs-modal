@@ -1,0 +1,84 @@
+paper-dialog {
+  --paper-dialog: {
+    width: 90%;
+    max-width: 545px;
+    border-radius: 4px;
+    padding: 15px;
+  };
+  --shadow-elevation-16dp: {
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.35),0 3px 2px 0 rgba(0,0,0,.18);
+  }
+}
+
+paper-dialog > *,
+paper-dialog ::content > * {
+  padding: 0;
+  margin: auto;
+}
+
+paper-dialog ::content *:last-child {
+  margin-bottom: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.fs-dialog__close {
+  -webkit-appearance: none;
+  -webkit-touch-callout: none;
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 0 transparent;
+  height: 20px;
+  height: 1.25rem;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  right: 0.625rem;
+  top: 10px;
+  top: 0.625rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  width: 1.25rem;
+}
+.fs-dialog__close:before,
+.fs-dialog__close:after {
+  background-color: #a8a8a8;
+  border-radius: 4px;
+  content: '';
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 12px;
+  width: 0.75rem;
+}
+.fs-dialog__close:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.fs-dialog__close:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.fs-dialog__close:hover:before,
+.fs-dialog__close:focus:before,
+.fs-dialog__close:hover:after,
+.fs-dialog__close:focus:after {
+  background-color: #333331;
+}
+.fs-dialog__close:active:before,
+.fs-dialog__close:active:after {
+  background-color: #6f6f6f;
+}
+
+paper-dialog ::content .fs-modal__footer {
+  margin: 15px -15px -15px;
+  background: #f4f4f4;
+  padding: 10px 15px;
+  border-top: 1px solid #ccc;
+};
