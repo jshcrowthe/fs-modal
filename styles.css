@@ -10,38 +10,42 @@ paper-dialog {
   }
 }
 
-h4.title {
-  padding:0;
-  margin:0;
+/* The !important flags on this as well as the 
+ * .wrap and .fs-dialog__close classes are to 
+ * override the paper-dialog default styling that makes everything look weird */
+
+paper-dialog h4.title {
+  padding:0 !important;
+  margin:0 !important;
 }
 
 .wrap {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .fs-dialog__close {
-  margin: 0;
+  -moz-user-select: none;
+  -ms-user-select: none;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
+  -webkit-user-select: none;
   background: transparent;
   border: none;
   box-shadow: 0 0 0 transparent;
-  height: 20px;
   height: 1.25rem;
+  height: 20px;
   line-height: 1;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   position: absolute;
-  right: 10px;
   right: 0.625rem;
-  top: 10px;
+  right: 10px;
   top: 0.625rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  top: 10px;
   user-select: none;
-  width: 20px;
   width: 1.25rem;
+  width: 20px;
 }
 .fs-dialog__close:before,
 .fs-dialog__close:after {
