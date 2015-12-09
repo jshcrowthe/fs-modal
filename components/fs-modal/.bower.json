@@ -1,0 +1,41 @@
+{
+  "name": "fs-modal",
+  "authors": [
+    "Josh Crowther <jshcrowthe@gmail.com>"
+  ],
+  "description": "A <fs-modal> element that models the FamilySearch styleguide",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "fs-modal.html",
+  "homepage": "https://github.com/jshcrowthe/fs-modal/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0",
+    "paper-dialog": "PolymerElements/paper-dialog#~1.0.2",
+    "fs-styles": "fs-webdev/fs-styles"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*",
+    "fs-button": "jshcrowthe/fs-button"
+  },
+  "resolutions": {
+    "polymer": "^1.2.1"
+  },
+  "_release": "2198c0be5c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2198c0be5ca746abea754ae501ecc89f00fa55f8"
+  },
+  "_source": "git://github.com/jshcrowthe/fs-modal.git",
+  "_target": "master",
+  "_originalSource": "jshcrowthe/fs-modal",
+  "_direct": true
+}
