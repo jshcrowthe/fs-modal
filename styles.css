@@ -85,7 +85,9 @@ paper-dialog h4.title {
   background-color: #6f6f6f;
 }
 
-paper-dialog ::content .fs-modal__footer {
+paper-dialog ::content [footer] {
+  display: block;
+  width: 100%;
   margin: 15px -15px -15px;
   background: #f4f4f4;
   padding: 10px 15px;
