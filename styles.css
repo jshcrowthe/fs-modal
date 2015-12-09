@@ -47,6 +47,11 @@ paper-dialog h4.title {
   width: 1.25rem;
   width: 20px;
 }
+
+.fs-dialog__close:hover {
+  cursor: pointer;
+}
+
 .fs-dialog__close:before,
 .fs-dialog__close:after {
   background-color: #a8a8a8;
