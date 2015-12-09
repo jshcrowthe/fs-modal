@@ -17,6 +17,8 @@ paper-dialog {
 paper-dialog h4.title {
   padding:0 !important;
   margin:0 !important;
+  text-align: left;
+  @apply(--fs-modal-title);
 }
 
 .wrap {
