@@ -98,7 +98,14 @@ Example:
      * An interface method to open the modal
      */
     open: function() {
-      this.$.modal.open();
+      // Putting this block inside of an async call
+      // to ensure that the modals inner content is 
+      // rendered fully and the modal is properly
+      // positioned
+      this.async(function() {
+        this.$.modal.refit();
+        this.$.modal.open();
+      }.bind(this));
     },
     /**
      * An interface method to close the modal
