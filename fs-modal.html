@@ -46,12 +46,12 @@ Example:
   <style include='fs-styles'></style>
   <template>
     <paper-dialog id='modal' animation-config='[[_animationConfig]]' modal>
-      <h4 class='title' hidden='[[!title]]'>[[title]]</h4>
-      <template is='dom-if' if="{{!title}}">
-        <content select='[modal-title]'></content>
-      </template>
-      <button class="fs-dialog__close" title='Close' dialog-dismiss></button>
       <div class="wrap">
+        <h4 class='title' hidden='[[!title]]'>[[title]]</h4>
+        <template is='dom-if' if="{{!title}}">
+          <content select='[modal-title]'></content>
+        </template>
+        <button class="fs-dialog__close" title='Close' dialog-dismiss></button>
         <content></content>
       </div>
     </paper-dialog>
